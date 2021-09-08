@@ -19,7 +19,7 @@ img:hover {
   background-color: white;
 }
 .center {
-  display: block;
+  display:block;
   margin-left: auto;
   width: 30%;
 }
