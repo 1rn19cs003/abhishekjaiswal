@@ -4,12 +4,13 @@ body {
   margin-top: 30px;
   width: auto;
 }
-
-image-abhishek {
-  border: 1px solid #ddd;
+.video_content{
+   margin-top: 50px;
+}
+.image-abhishek {
   align-content: center;
   padding: 5px;
-  width: 400px;
+  margin-top: -300px;
 }
 img:hover {
   box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
@@ -34,7 +35,7 @@ img:hover {
 p{
     text-align:auto;
     font-size: 20px;
-    margin: auto;
+    margin-top: 10px;
 }
 /* for resume */
 .nav-link {
