@@ -4,7 +4,7 @@ var myChart = new Chart(ctx, {
     data: {
         labels: ['C', 'C++', 'Java', 'JavaScript', 'Flutter', 'Dart','Python'],
         datasets: [{
-            label: `Programing languages`,
+            label: `My Knowledge about Programing languages`,
             data: [16, 19, 13, 11, 8, 14,5],
             backgroundColor: [
                 'rgba(255, 99, 132, 0.2)',
