@@ -33,6 +33,11 @@ var myChart = new Chart(ctx, {
                 beginAtZero: true
             }
         },
+        animation:
+        {
+            duration:1000,
+            easing:"easeOutBounce"
+        }
         // title:{
         //     display:true,
         //     text:"Let's check my knowledge",
