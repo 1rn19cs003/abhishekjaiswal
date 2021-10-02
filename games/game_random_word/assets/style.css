@@ -1,0 +1,103 @@
+* {
+            box-sizing: border-box;
+            margin: 0px;
+            padding: 5px;
+            border-radius: 10px;
+
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        header {
+            width: 100%;
+            line-height: 15vh;
+            /* height: 100px; */
+            background-color: #16a085;
+        }
+
+        h1 {
+            text-align: center;
+            color: white;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 1.8rem;
+            text-transform: uppercase;
+            letter-spacing: 15px;
+            text-shadow: 0 1px 0 #efefef,
+                0 2px 0 #efefef,
+                0 3px 0 #efefef,
+                0 4px 0 #efefef,
+                0 20px 5px rgba(0, 0, 0, .1);
+        }
+
+        section {
+            height: 85vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #1abc9c;
+        }
+
+        .gameArea {
+            width: 50%;
+            height: 60%;
+            font-family: 'Roboto', sans-serif;
+            border-radius: 10px;
+            padding: 20px 0;
+            background-color: #2ed573;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            box-shadow: 0 8px 6px -6px black;
+        }
+
+        h3 {
+            text-align: center;
+            font-size: 1.5rem;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 600;
+        }
+
+        input {
+            width: 40%;
+            padding: 15px 0;
+            text-align: center;
+            border-radius: 25px;
+            outline: none;
+            border: none;
+            background-color: #dff9fb;
+            color: black;
+            margin: 2rem 0;
+            font-size: 1.1rem;
+
+        }
+
+        button {
+            font-size: 1rem;
+            cursor: pointer;
+            outline: none;
+            border: #2f3542;
+            text-decoration: none;
+            margin-top: 10px;
+            color: #eb4d4b;
+        }
+
+        button.btn {
+            font-weight: 600;
+            padding: 1rem 2rem;
+            background: white;
+            text-transform: uppercase;
+            transition-property: all;
+            transition-duration: 0.5s;
+            transition-timing-function: cubic-bezier(0.65, -.25, 0.25, 1.95);
+
+        }
+
+        button.btn:hover,
+        button.btn:focus,
+        button.btn:active {
+            letter-spacing: 0.125rem;
+            word-spacing: 0.2rem;
+        }
