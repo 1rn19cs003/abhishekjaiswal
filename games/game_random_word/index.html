@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@100&display=swap"
         rel="stylesheet">
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous"> -->
-    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="./assets/style/style.css">
 </head>
 
 <body>
@@ -27,68 +27,7 @@
             <button class="btn">Click here to start</button>
         </div>
     </section>
-    <script>
-        const msg = document.querySelector('.msg');
-        const guess = document.querySelector('input');
-        const btn = document.querySelector('.btn');
-        let play = false;
-        let newWords = "";
-        let ranWords = "";
-        let sWord = ['java', 'python', 'c++','simran-chaudhary','yashi-garg','aman','shagun','bhupendra','avnish-anand','suraj-chaudhary','kumar-shanu', 'c#', 'visual-basic','rashika', 'javascript', 'php', 'sql', 'assembly-language', 'groovy', 'react-js', 'swift', 'android', 'mysql', 'angular', 'react-native', 'html', 'css', 'bootstrap', 'mongodb'];
-
-        const creatNewWords = () => {
-            let ranNum = Math.floor(Math.random() * sWord.length);
-            let newTempSwords = sWord[ranNum];
-            return newTempSwords;
-        }
-
-        const scramblewords = (arr) => {
-            for (let i = arr.length - 1; i >= 0; i--) {
-                let temp = arr[i];
-                let j = Math.floor(Math.random() * (i + 1));
-                arr[i] = arr[j];
-                arr[j] = temp;
-                // console.log(temp);
-                // console.log(i);
-                // console.log(j);
-
-            }
-            return arr;
-        }
-
-
-
-
-        btn.addEventListener('click', function () {
-            if (!play) {
-                play = true;
-                btn.innerHTML = "Guess";
-                guess.classList.toggle('hidden');
-                newWords = creatNewWords();
-                ranWords = scramblewords(newWords.split("")).join("");
-                // console.log(ranWords.join(""));
-                msg.innerHTML = `Guess the word: ${ranWords}`;
-            }
-            else {
-                let tempWord = guess.value;
-                if (tempWord === newWords) {
-                    play = false;
-                    msg.innerHTML = `Good Job . It is ${newWords}`;
-                    btn.innerHTML = "Start Again";
-                    guess.classList.toggle('hidden');
-                    guess.value = "";
-
-                }
-                else {
-                    msg.innerHTML = `Oops . It is Incorrect ${ranWords}`;
-
-                }
-            }
-        })
-
-
-
-    </script>
+    <script src="./assets/js/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
         crossorigin="anonymous"></script>

@@ -133,9 +133,23 @@ h3{
 /* ================================
 *   Games section
 ==============================*/
-.game{
-    
+.games{
+    align-items: center;
+
 }
+ .column1{
+    /* float: left; */
+  width: 100%;
+  padding: 0px;
+}
+
+.column2{
+    /* float: right; */
+  width: 100%;
+  margin-left: 60%;
+  margin-top: -32%;
+  padding: 0px;
+} 
 /* =============================
 * Education
 ==============================*/
