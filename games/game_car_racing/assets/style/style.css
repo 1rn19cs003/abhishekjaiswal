@@ -14,7 +14,7 @@
             background-color: red;
             position: absolute;
             bottom: 120px;
-            background-image: url(/games/game_car_racing/assets/images/car5.jfif);
+            background-image: url("../images/car5.jfif");
             background-size: cover;
         }
 
@@ -38,7 +38,7 @@
         }
 
         .CarGame {
-            background-image: url(/games/game_car_racing/assets/images/forest8.jpg);
+            background-image: url("../images/forest8.jpg");
             background-size: cover;
 
         }
@@ -55,7 +55,7 @@
             /* background-color: red; */
             position: absolute;
             bottom: 120px;
-            background-image: url(/games/game_car_racing/assets/images/car1.png);
+            background-image: url("../images/car1.png");
             background-size: cover;
         }
 
