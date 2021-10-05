@@ -4,7 +4,7 @@ const btn = document.querySelector('.btn');
 let play = false;
 let newWords = "";
 let ranWords = "";
-let sWord = ['java','adyatha', 'python', 'c++', 'simran-chaudhary', 'yashi-garg', 'aman', 'shagun', 'bhupendra', 'avnish-anand', 'suraj-chaudhary', 'kumar-shanu', 'c#', 'visual-basic', 'rashika', 'javascript', 'php', 'sql', 'assembly-language', 'groovy', 'react-js', 'swift', 'android', 'mysql', 'angular', 'react-native', 'html', 'css', 'bootstrap', 'mongodb'];
+let sWord = ['java','adyatha','python','c++','simran-chaudhary','yashi-garg','aman','shagun','bhupendra','avnish-anand','suraj-chaudhary','kumar-shanu','c#','visual-basic','rashika','javascript', 'php', 'sql', 'assembly-language', 'groovy', 'react-js', 'swift', 'android', 'mysql', 'angular', 'react-native', 'html', 'css', 'bootstrap', 'mongodb'];
 
 const creatNewWords = () => {
     let ranNum = Math.floor(Math.random() * sWord.length);
