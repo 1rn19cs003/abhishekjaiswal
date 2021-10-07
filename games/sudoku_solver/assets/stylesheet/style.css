@@ -1,0 +1,102 @@
+* {
+           background-color: rgb(182, 213, 240);
+           font-family: 'Open Sans', sans-ser
+        }
+.grid {
+  width: 50%;
+  height: 60%;
+  margin: auto;
+  margin-top: 15vh;
+  font-family: "Roboto", sans-serif;
+  border-radius: 10px;
+  padding: 20px 0;
+  flex-direction: column;
+  box-shadow: 10px 8px 8px -6px blueviolet;
+  background-image: url("../images/images1.jfif");
+  background-size: cover;
+  width: fit-content;
+}
+h1{
+  font: outline;
+  font-weight: 100px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.text_about{
+  font-weight: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.box1 {
+  padding: 2px;
+  margin: 1px;
+  background-color: azure;
+}
+.box2 {
+  padding: 2px;
+  margin: 1px;
+  background-color: antiquewhite;
+}
+.box3 {
+  padding: 2px;
+  margin: 1px;
+  background-color: aquamarine;
+}
+.box4 {
+  padding: 2px;
+  margin: 1px;
+  background-color: rgb(142, 213, 84);
+}
+.box5 {
+  padding: 2px;
+  margin: 1px;
+  background-color: rgb(199, 208, 41);
+}
+.box6 {
+  padding: 2px;
+  margin: 1px;
+  background-color: rgb(120, 93, 231);
+}
+.box7 {
+  padding: 2px;
+  margin: 1px;
+  background-color: rgb(218, 145, 163);
+}
+.box8 {
+  padding: 2px;
+  margin: 1px;
+  background-color: rgb(233, 157, 95);
+}
+.box9 {
+  padding: 2px;
+  margin: 1px;
+  background-color: rgb(114, 180, 226);
+}
+.btn {
+  padding: 5px;
+  margin: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#answerBoard {
+    margin-right: 20%;
+    float: right;
+    margin-top: 8%;
+    margin-bottom: 10%;
+}
+.column {
+  float: left;
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}

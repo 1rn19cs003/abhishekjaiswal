@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sudoku Solver</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/stylesheet/style.css">
+</head>
+
+
+<body>
+    <h1>Sudoku Solver</h1>
+    <div class ="text_about">
+        <h4>Hey Guys! this is a Sudoku Solver unfortunately You can't play the games here <br>
+        But yes, you can solve your Sudoku here And the best thing is it'll give you one of the possible solution <br>
+        But to get that Solution you need to keep the some rules in your mind.  </h4>
+    </div>
+    <div class ="text_about">
+    <ul><li>Leave the box when you don't have to fill the value <br> </li></ul> 
+    <ul><li>Minimum 7 number of hints you need to give to get correct answer</li></ul>
+    <br>
+    </div>
+    <div class="text_about">
+    <h2>Best Of Luck 👍</h2>
+    </div>
+    <div class="row">
+        <div class="column">
+            <div class="grid">
+                <input id="1" type="number" maxlength="1" max="9" min="1" class="box1">
+                <input id="2" type="number" maxlength="1" max="9" min="1" class="box1">
+                <input id="3" type="number" maxlength="1" max="9" min="1" class="box1">
+                <input id="4" type="number" maxlength="1" max="9" min="1" class="box2">
+                <input id="5" type="number" maxlength="1" max="9" min="1" class="box2">
+                <input id="6" type="number" maxlength="1" max="9" min="1" class="box2">
+                <input id="7" type="number" maxlength="1" max="9" min="1" class="box3">
+                <input id="8" type="number" maxlength="1" max="9" min="1" class="box3">
+                <input id="9" type="number" maxlength="1" max="9" min="1" class="box3">
+                <br>
+                <input id="10" type="number" maxlength="1" max="9" min="1" class="box1">
+                <input id="11" type="number" maxlength="1" max="9" min="1" class="box1">
+                <input id="12" type="number" maxlength="1" max="9" min="1" class="box1">
+                <input id="13" type="number" maxlength="1" max="9" min="1" class="box2">
+                <input id="14" type="number" maxlength="1" max="9" min="1" class="box2">
+                <input id="15" type="number" maxlength="1" max="9" min="1" class="box2">
+                <input id="16" type="number" maxlength="1" max="9" min="1" class="box3">
+                <input id="17" type="number" maxlength="1" max="9" min="1" class="box3">
+                <input id="18" type="number" maxlength="1" max="9" min="1" class="box3">
+                <br>
+                <input id="19" type="number" maxlength="1" max="9" min="1" class="box1">
+                <input id="20" type="number" maxlength="1" max="9" min="1" class="box1">
+                <input id="21" type="number" maxlength="1" max="9" min="1" class="box1">
+                <input id="22" type="number" maxlength="1" max="9" min="1" class="box2">
+                <input id="23" type="number" maxlength="1" max="9" min="1" class="box2">
+                <input id="24" type="number" maxlength="1" max="9" min="1" class="box2">
+                <input id="25" type="number" maxlength="1" max="9" min="1" class="box3">
+                <input id="26" type="number" maxlength="1" max="9" min="1" class="box3">
+                <input id="27" type="number" maxlength="1" max="9" min="1" class="box3">
+                <br>
+                <input id="28" type="number" maxlength="1" max="9" min="1" class="box4">
+                <input id="29" type="number" maxlength="1" max="9" min="1" class="box4">
+                <input id="30" type="number" maxlength="1" max="9" min="1" class="box4">
+                <input id="31" type="number" maxlength="1" max="9" min="1" class="box5">
+                <input id="32" type="number" maxlength="1" max="9" min="1" class="box5">
+                <input id="33" type="number" maxlength="1" max="9" min="1" class="box5">
+                <input id="34" type="number" maxlength="1" max="9" min="1" class="box6">
+                <input id="35" type="number" maxlength="1" max="9" min="1" class="box6">
+                <input id="36" type="number" maxlength="1" max="9" min="1" class="box6">
+                <br>
+                <input id="37" type="number" maxlength="1" max="9" min="1" class="box4">
+                <input id="38" type="number" maxlength="1" max="9" min="1" class="box4">
+                <input id="39" type="number" maxlength="1" max="9" min="1" class="box4">
+                <input id="40" type="number" maxlength="1" max="9" min="1" class="box5">
+                <input id="41" type="number" maxlength="1" max="9" min="1" class="box5">
+                <input id="42" type="number" maxlength="1" max="9" min="1" class="box5">
+                <input id="43" type="number" maxlength="1" max="9" min="1" class="box6">
+                <input id="44" type="number" maxlength="1" max="9" min="1" class="box6">
+                <input id="45" type="number" maxlength="1" max="9" min="1" class="box6">
+                <br>
+                <input id="46" type="number" maxlength="1" max="9" min="1" class="box4">
+                <input id="47" type="number" maxlength="1" max="9" min="1" class="box4">
+                <input id="48" type="number" maxlength="1" max="9" min="1" class="box4">
+                <input id="49" type="number" maxlength="1" max="9" min="1" class="box5">
+                <input id="50" type="number" maxlength="1" max="9" min="1" class="box5">
+                <input id="51" type="number" maxlength="1" max="9" min="1" class="box5">
+                <input id="52" type="number" maxlength="1" max="9" min="1" class="box6">
+                <input id="53" type="number" maxlength="1" max="9" min="1" class="box6">
+                <input id="54" type="number" maxlength="1" max="9" min="1" class="box6">
+                <br>
+                <input id="55" type="number" maxlength="1" max="9" min="1" class="box7">
+                <input id="56" type="number" maxlength="1" max="9" min="1" class="box7">
+                <input id="57" type="number" maxlength="1" max="9" min="1" class="box7">
+                <input id="58" type="number" maxlength="1" max="9" min="1" class="box8">
+                <input id="59" type="number" maxlength="1" max="9" min="1" class="box8">
+                <input id="60" type="number" maxlength="1" max="9" min="1" class="box8">
+                <input id="61" type="number" maxlength="1" max="9" min="1" class="box9">
+                <input id="62" type="number" maxlength="1" max="9" min="1" class="box9">
+                <input id="63" type="number" maxlength="1" max="9" min="1" class="box9">
+                <br>
+                <input id="64" type="number" maxlength="1" max="9" min="1" class="box7">
+                <input id="65" type="number" maxlength="1" max="9" min="1" class="box7">
+                <input id="66" type="number" maxlength="1" max="9" min="1" class="box7">
+                <input id="67" type="number" maxlength="1" max="9" min="1" class="box8">
+                <input id="68" type="number" maxlength="1" max="9" min="1" class="box8">
+                <input id="69" type="number" maxlength="1" max="9" min="1" class="box8">
+                <input id="70" type="number" maxlength="1" max="9" min="1" class="box9">
+                <input id="71" type="number" maxlength="1" max="9" min="1" class="box9">
+                <input id="72" type="number" maxlength="1" max="9" min="1" class="box9">
+                <br>
+                <input id="73" type="number" maxlength="1" max="9" min="1" class="box7">
+                <input id="74" type="number" maxlength="1" max="9" min="1" class="box7">
+                <input id="75" type="number" maxlength="1" max="9" min="1" class="box7">
+                <input id="76" type="number" maxlength="1" max="9" min="1" class="box8">
+                <input id="77" type="number" maxlength="1" max="9" min="1" class="box8">
+                <input id="78" type="number" maxlength="1" max="9" min="1" class="box8">
+                <input id="79" type="number" maxlength="1" max="9" min="1" class="box9">
+                <input id="80" type="number" maxlength="1" max="9" min="1" class="box9">
+                <input id="81" type="number" maxlength="1" max="9" min="1" class="box9">
+                <button onclick="initiate()" class="btn">Click here to solve</button>
+            </div>
+        </div>
+        <div class column>
+            </section>
+            <div id="answerBoard">
+                <p id="row 1"></p>
+                <p id="row 2"></p>
+                <p id="row 3"></p>
+                <p id="row 4"></p>
+                <p id="row 5"></p>
+                <p id="row 6"></p>
+                <p id="row 7"></p>
+                <p id="row 8"></p>
+                <p id="row 9"></p>
+            </div>
+        </div>
+    </div>
+    <script>
+        const placeholder = "🤔";
+        for (var i = 1; i <= 9; i++) {
+            document.getElementById("row " + String(i)).innerHTML = placeholder + "\xa0\xa0\xa0\xa0\xa0\xa0" + placeholder + "\xa0\xa0\xa0\xa0\xa0\xa0" + placeholder + "\xa0\xa0\xa0\xa0\xa0\xa0" + placeholder + "\xa0\xa0\xa0\xa0\xa0\xa0" + placeholder + "\xa0\xa0\xa0\xa0\xa0\xa0" + placeholder + "\xa0\xa0\xa0\xa0\xa0\xa0" + placeholder + "\xa0\xa0\xa0\xa0\xa0\xa0" + placeholder + "\xa0\xa0\xa0\xa0\xa0\xa0" + placeholder;
+        }
+    </script>
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
