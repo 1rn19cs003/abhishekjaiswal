@@ -1,0 +1,246 @@
+body {
+  padding: 20px;
+    font-family: "Open Sans", sans-serif;
+  margin-top: 30px;
+  width: auto;
+}
+* {
+  box-sizing: border-box;
+}
+/* .video_content{
+   margin-top: 50px;
+} */
+.image-abhishek {
+  align-content: right;
+  padding: 5px;
+}
+.column {
+  float: left;
+  width: 50%;
+  padding: 5px;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+img:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+.image-abhishek {
+  background-color: white;
+}
+.name-abhishek{
+  text-align: right;
+}
+.center {
+  display:block;
+  margin-left: auto;
+  width: 30%;
+}
+.name-abhishek {
+  margin-right: auto;
+  font-size: 70px;
+}
+
+.about-abhishek {
+    font-size: 30px;
+
+}
+p{
+    text-align:auto;
+    font-size: 20px;
+    margin-top: 10px;
+}
+/* for resume */
+.nav-link {
+    font-size: 25px;
+}
+a {
+    color: #798fa7;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+/* ===========================
+* Chart---
+============================== */
+/* .chart{
+    width: 30%;
+    margin-top: 100px;
+} */
+/* ===========================
+* progress ---
+============================== */
+.progress_align{
+    margin-left: auto;
+    width: 40%;
+    margin-top: 200px;
+}
+.progress-bar {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    color: #fff;
+    text-align: center;
+    background-color: #007bff;
+}
+.progress {
+    display: flex;
+
+    height: 1rem;
+    overflow: hidden;
+    line-height: 0;
+    font-size: .75rem;
+    background-color: #e9ecef;
+    border-radius: .25rem;
+}
+/* ================================
+*   Technology starts
+================================== */
+.display-4{
+    margin-top: -490px;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto {
+    position:relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.tech-icon {
+    width: 5%;
+    
+}
+.icon-box {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.08);
+}
+h3{
+    padding: 20px;
+}
+.tech_fam{
+    align-content: center;
+
+}
+/* ================================
+*   Games section
+==============================*/
+/* .games{
+    align-items: center;
+
+} */
+.column{
+    float:left;
+  width: 50%;
+} 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* =============================
+* Education
+==============================*/
+
+
+.college{
+    text-align: center;
+}
+.School{
+    text-align: center;
+}
+
+/* Experience======================
+*
+==============================*/
+
+.icon-box-exp {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.08);
+}
+.tech-icon-exp{
+    width: 20%;
+}
+h4{
+    padding: 20px;
+}
+.text2.exp{
+    padding: 30px;
+}
+/* footer======================
+*
+==============================*/
+
+
+.footer{
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgb(61, 95, 218);
+    height: auto;
+    width: 100vw;
+    padding-top: 40px;
+    color: #fff;
+}
+.footer-content{
+   display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+ }
+ h8{
+     padding: 20px;
+ }
+.footer-content h3{
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+.footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    font-size: 30px;
+}
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 1rem 0 3rem 0;
+}
+.socials a{
+    color: #fff;
+}
+.socials a i{
+    font-size: 1.1rem;
+
+}
+.socials a:hover i{
+    color: aqua;
+}
+
+.footer-bottom{
+    background: rgb(52, 102, 182);
+    padding: 20px 0;
+    text-align: center;
+}
+.footer-bottom p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+.footer-bottom span{
+    text-transform: uppercase;
+    font-weight: 200;
+}
